@@ -1,0 +1,27 @@
+{
+  "name": "com.walsin.cordova.plugin.demo",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "com.walsin.cordova.plugin.demo",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enochfly/TEST.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enochfly/TEST/issues"
+  },
+  "homepage": "https://github.com/enochfly/TEST#readme"
+}
