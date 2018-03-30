@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin id="com.walsin.cordova.plugin.demo" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>
+		Hello2
+	</name>
+	<js-module name="Hello2" src="www/Hello2.js">
+		<clobbers target="cordova.plugins.Hello2" />
+	</js-module>
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="Hello2">
+				<param name="ios-package" value="Hello2" />
+			</feature>
+		</config-file>
+		<source-file src="src/ios/Hello2.m" />
+	</platform>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="Hello2">
+				<param name="android-package" value="com.walsin.cordova.plugin.demo.Hello2" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+		</config-file>
+		<source-file src="src/android/Hello2.java" target-dir="src/com/walsin/cordova/plugin/demo/Hello2" />
+	</platform>
+</plugin>
